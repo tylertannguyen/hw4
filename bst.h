@@ -247,7 +247,8 @@ protected:
     virtual void nodeSwap( Node<Key,Value>* n1, Node<Key,Value>* n2) ;
 
     // Add helper functions here
-
+    void clearHelper(Node<Key, Value>* current);
+    int balancedHeight(Node<Key, Value>* current) const;
 
 protected:
     Node<Key, Value>* root_;
